@@ -14,6 +14,6 @@ router.use('/', createProxyMiddleware({
 	cookieDomainRewrite: ""
 }));
 
-app.use("/.netlify/functions/server", router);
+app.use("/.netlify/functions/", router);
 
 module.exports.handler = serverless(app);
